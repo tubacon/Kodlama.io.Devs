@@ -1,14 +1,14 @@
 ﻿using Application.Services.Repositories;
 using Core.Persistence.Repositories;
 using Domain.Entities;
-using Persistance.Contexts;
+using Persistence.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistance.Repositories
+namespace Persistence.Repositories
 {
     public class ProgrammingLanguageRepository : EfRepositoryBase<ProgrammingLanguage, BaseDbContext>, IProgrammingLanguageRepository
     {

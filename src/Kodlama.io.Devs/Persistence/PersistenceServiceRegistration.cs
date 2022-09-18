@@ -2,8 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Persistance.Contexts;
-using Persistance.Repositories;
+using Persistence.Contexts;
+using Persistence.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +11,11 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistance
+namespace Persistence
 {
     public static class PersistenceServiceRegistration
     {
-        public static IServiceCollection AddPersistanceServices(this IServiceCollection services,
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
             IConfiguration configuration)
         {
             services.AddDbContext<BaseDbContext>(options =>
